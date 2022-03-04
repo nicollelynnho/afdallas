@@ -1,11 +1,26 @@
 Title:
 Automating Member Registration in Culturetheque 
 
-Description:
-When new members subscribe to Alliance Francaise de Dallas, or members renew their subscription, their information needs to be transfered from Arc En Ciel, our CRM software to Culturetheque, a library subscription that comes with the membership. Additionally, their emails need to be added to Constant Contact for email marketing. The Memberships.py script reads a csv from Arc En Ciel and uses post requests to create accounts in Culturetheque, or update the expiration date in Culturetheque for existing members. Additionally, it prints a list of emails to be pasted into Constant Contact.
+Introduction:
+When new members subscribe to Alliance Francaise de Dallas, or members renew their subscription, their information needs to be transfered from Arc En Ciel, our CRM software to Culturetheque, a library subscription that comes with the membership. Additionally, their emails need to be added to Constant Contact for email marketing. It was a manual data entry task to view the member data in excel, and create accounts in Culturetheque and Constant Contact. This task took approximately 5 hours weekly. 
 
-Use:
-This script is intended to be used by Alliance Francaise divisions that may benefit from automating registration processes. Python needs to be installed.
+Project Description:
+The Memberships.py (not included on github for privacy) is a python script that does the following
+- Reads a csv from Arc En Ciel to obtain new member data (first name, last name, email, account expiration date)
+- Uses post request to determine if a new account needs to be created, or if an existing account needs to be updated.
+- Uses a second post request to execute the action in the previous step
+- Prints a list of emails that need to be pasted into Constant Contact
 
+Tools & Packages:
+- Python
+- Pandas
+- Requests
+
+Key Accomplishments:
+- Decreased membership data processing time by 95%
+
+Credits
+- Nicolle Ho
+- Alliance Francaise de Dallas
 
 

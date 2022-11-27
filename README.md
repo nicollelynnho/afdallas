@@ -17,7 +17,7 @@ Tools & Packages:
 - Requests
 
 Key Accomplishments:
-- Decreased membership data processing time by 95%
+- Decreased processing time for membership data by 95%
 
 Credits
 - Nicolle Ho
